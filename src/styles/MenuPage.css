@@ -1,24 +1,76 @@
-.menu-container {
-  padding: 1rem;
+.menu-page {
   font-family: sans-serif;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
+.layout {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Order box */
+.order-section {
+  flex: 1;
+  min-width: 250px;
+  background: #393939;
+  padding: 1rem;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.menu-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
   margin-bottom: 0.5rem;
 }
 
-button {
+.order-section ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.order-section li {
+  margin-bottom: 0.5rem;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Menu card grid */
+.menu-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background:#393939;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.menu-card h3 {
+  margin: 0.5rem 0;
+}
+
+.menu-card button {
   background: #007bff;
   color: white;
   border: none;
-  padding: 0.3rem 0.6rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 0.5rem;
 }
